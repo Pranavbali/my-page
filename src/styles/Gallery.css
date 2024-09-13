@@ -1,0 +1,82 @@
+.gallery-container {
+    background-color: #0c1823;
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden; /* Ensure the container doesn't show overflowing content */
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in-out; /* Smooth transition effects */
+  }
+  
+  .add-image-btn {
+    background-color: #2e2f2f;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s;
+  }
+  
+  .add-image-btn:hover {
+    background-color: #9ca2a3;
+  }
+  
+  .file-upload-label {
+    cursor: pointer;
+  }
+  
+  .image-gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+    transition: transform 0.5s ease-in-out; /* Smooth transition for scrolling */
+    overflow: hidden; /* Ensure no overflow is shown */
+  }
+  
+  .image-gallery img {
+    width: 33.33%; /* Display three images per row */
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .image-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .gallery-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .gallery-navigation button {
+    padding: 10px;
+    border: none;
+    background-color: #2e2f2f;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .gallery-navigation button:hover {
+    background-color: #9ca2a3;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .image-gallery {
+      flex-direction: column; /* Stack images vertically on small screens */
+    }
+  
+    .image-gallery img {
+      width: 100%; /* Ensure images are responsive and fill container width */
+      flex: 0 0 auto; /* Allow images to maintain their size */
+    }
+  }
+  

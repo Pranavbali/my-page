@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;600&family=Poppins:wght@100;400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #191B1F;
+  color: #ffffff;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  transition: opacity 0.5s ease-in; /* Fade in effect on page load */
+  position: relative;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: transform 0.5s ease-in-out; /* Smooth transition effect */
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  max-width: 1200px;
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity */
+}
+
+.left-container, .right-container {
+  flex: 1;
+  padding: 20px;
+  background-color: #363C43;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.left-container {
+  color: #d4d4d8;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Stack containers on smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fade-in effect on page load */
+body.loaded {
+  opacity: 1;
+}
+
+body.loading {
+  opacity: 0;
+}

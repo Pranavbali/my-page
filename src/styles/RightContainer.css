@@ -1,0 +1,27 @@
+/* Parent container holding both the Tabs and Gallery widgets */
+.right-container {
+  background-color: #0b0e13;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Tabs Widget styling */
+.tabs-widget {
+  background-color: #12161b;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Gallery Widget styling */
+.gallery-widget {
+  background-color: #02101f;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}

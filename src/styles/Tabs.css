@@ -1,0 +1,39 @@
+.tabs-container {
+    background-color: #0c1823;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center; /* Centering the tabs container */
+  }
+  
+  .tabs {
+    display: inline-block; /* Ensuring that the tabs stay in the center */
+    background-color:#000000;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .tabs button {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    margin-right: 5px;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .tabs button.active {
+    background-color: #2e2f2f; /* Highlighting the active tab */
+    color: #ffffff;
+  }
+  .tabs button:hover {
+    background-color: #9ca2a3; /* Highlight on hover */
+    color: #ffffff;
+  }
+  
+  .tab-content {
+    margin-top: 15px;
+    color: #ffffff;
+  }
+  
